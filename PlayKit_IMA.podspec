@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'AGPLv3', :text => 'AGPLv3' }
   s.summary          = 'PlayKit IMA Plugin'
   s.homepage         = 'https://github.com/MediaStreamingChannel/playkit-ios-ima.git'
-  s.source           = { :git => 'https://github.com/MediaStreamingChannel/playkit-ios-ima.git', :branch => s.branch.to_s }
+  s.source           = { :git => 'https://github.com/MediaStreamingChannel/playkit-ios-ima.git', :branch => 'stg/1.10.0.beta1' }
   s.swift_version    = '5.0'
   
   s.ios.deployment_target = '10.0'
