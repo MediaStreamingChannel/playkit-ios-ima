@@ -4,7 +4,9 @@ import PlayKit
 import PlayKitUtils
 
 @objc public class IMADAIPlugin: BasePlugin, AdsDAIPlugin, PKPluginWarmUp, PlayerEngineWrapperProvider, IMAAdsLoaderDelegate, IMAStreamManagerDelegate, IMAWebOpenerDelegate {
-    
+    #if os(tvOS)
+    public var adDecoratorItem: PKFocusableContainerItemInterface?
+    #endif
     // Internal errors for requesting ads
     enum IMADAIPluginRequestError: Error {
         case missingPlayerView
