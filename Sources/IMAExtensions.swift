@@ -26,6 +26,7 @@ extension PKAdInfo {
             adDuration: ad.duration,
             title: ad.adTitle,
             isSkippable: ad.isSkippable,
+            skipTimeOffset: ad.skipTimeOffset,
             contentType: ad.contentType,
             adId: ad.adId,
             adSystem: ad.adSystem,
