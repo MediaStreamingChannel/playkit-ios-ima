@@ -5,7 +5,7 @@ suffix = '.0000'   # Dev mode
 Pod::Spec.new do |s|
   s.name             = 'PlayKit_IMA'
   s.version          = '1.10.0' + '.beta1'
-  s.branch           = 'stg/1.10.0.beta'
+  s.branch           = 'stg/1.10.0.beta1'
   s.author           = { 'Kaltura' => 'community@kaltura.com' }
   s.license          = { :type => 'AGPLv3', :text => 'AGPLv3' }
   s.summary          = 'PlayKit IMA Plugin'
