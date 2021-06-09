@@ -93,6 +93,15 @@ enum IMAState: Int, StateProtocol, CustomStringConvertible {
     private var requestTimeoutInterval: TimeInterval = IMAPlugin.defaultTimeoutInterval
     
     private var adDisplayContainer: IMAAdDisplayContainer?
+    #if os(tvOS)
+    public var adDecoratorItem: PKFocusableContainerItemInterface? {
+        get {
+            guard let displayContainer = adDisplayContainer  else { return nil }
+            return AdDisplayContainer(adContainer: displayContainer.adContainer, adContainerViewController: displayContainer.adContainerViewController, focusEnvironment: displayContainer.focusEnvironment,
+                                      pluginName: IMAPlugin.pluginName)
+        }
+    }
+    #endif
     
     private var pkAdInfo: PKAdInfo?
     private var contentEndedNeedToPlayPostroll: Bool = false
